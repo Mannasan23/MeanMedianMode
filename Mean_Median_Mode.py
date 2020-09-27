@@ -20,17 +20,17 @@ def get_mode(sorted_data):
     #Calculating Mode
     data = Counter(sorted_data)
     mode_data_for_range = {
-                            "75-85": 0,
-                            "85-95": 0,
-                            "95-105": 0,
-                            "105-115": 0,
-                            "115-125": 0,
-                            "125-135": 0,
-                            "135-145": 0,
-                            "145-155": 0,
-                            "155-165": 0,
-                            "165-175": 0
-                        }
+        "75-85": 0,
+        "85-95": 0,
+        "95-105": 0,
+        "105-115": 0,
+        "115-125": 0,
+        "125-135": 0,
+        "135-145": 0,
+        "145-155": 0,
+        "155-165": 0,
+        "165-175": 0
+    }
     for weight, occurence in data.items():
         if 75 < weight < 85:
             mode_data_for_range["75-85"] += occurence
